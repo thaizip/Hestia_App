@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import CarroselCategorias from '../component/Categorias'
-import CardLista from '../component/CardLista';
+import CardLista from '../component/cards/CardListaIndex';
 import CarroselMercados from '../component/CarroselMercados'
 
 export default function Index() {
@@ -22,15 +22,14 @@ export default function Index() {
         <CarroselCategorias />
       </View>
       <View style={styles.lista}>
-        <Text>MINHAS LISTAS</Text>
+        <Text style={{fontWeight: 'bold'}}>MINHAS LISTAS</Text>
         <CardLista />
         <CardLista />
         <CardLista />
-
       </View>
       <View>
         <Text style={styles.tituloMercado}>MERCADOS</Text>
-        <CarroselMercados/>
+        <CarroselMercados />
       </View>
     </ScrollView>
   );
@@ -57,6 +56,7 @@ const styles = StyleSheet.create({
     marginRight: '5%',
     marginBottom: '8%',
     borderRadius: 15,
+    elevation: 6
   },
   textBanner: {
     flex: 1,
@@ -90,14 +90,17 @@ const styles = StyleSheet.create({
   // MINHAS LISTAS
   lista: {
     backgroundColor: '#FFFFFF',
-    padding: '5%',
+    paddingTop: '5%',
+    paddingLeft: '5%',
+    paddingBottom: '5%',
     marginRight: '5%',
     marginBottom: '5%',
     borderRadius: 15,
-  },
+    elevation: 2
 
+  },
   //mercados
-  tituloMercado:{
+  tituloMercado: {
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center'

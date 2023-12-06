@@ -42,7 +42,9 @@ const styles = StyleSheet.create({
     width: 140,
     height: '60%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    elevation: 3
+
   },
   
 });

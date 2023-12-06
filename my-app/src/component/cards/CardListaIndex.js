@@ -24,9 +24,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginRight: '5%',
         marginTop: '5%',
-        marginBottom: '2%',
         color: '#303030',
-        backgroundColor:'#FFFFFF'
+        padding:'3%',
+        backgroundColor:'#FFFFFF',
+        borderRadius: 5,
     },
     titulo: {
         fontSize: 16,
